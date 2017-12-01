@@ -1,4 +1,5 @@
 var color = "black";
+
 // listening to colorPicker change and setting its value to variable color
 $("#colorPicker").on("change", function(event){
 	color = event.target.value;
@@ -10,7 +11,10 @@ $("#sizePicker").submit(function(event){
 	$("#pixel_canvas").html(makeGrid(event.target[0].value,event.target[1].value));
 });
 
-
+// Color background on click td
+$("#pixel_canvas").on("click", "td", function(){
+	$(this).css("background", color);
+});
 
 function makeGrid(rows, colums) {
 	var rowBeginning = "<tr>";
