@@ -30,3 +30,7 @@ function makeGrid(rows, colums) {
 	};
 	return grid;
 };
+
+$( document ).ready(function() {
+    $("#pixel_canvas").html(makeGrid(10,15));
+});
