@@ -1,4 +1,4 @@
-var color = "black";
+var color = "#4a6162";
 
 // listening to colorPicker change and setting its value to variable color
 $("#colorPicker").on("change", function(event){

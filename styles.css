@@ -7,11 +7,36 @@ body {
     font-family: 'Caveat', cursive;
     color: #4a6162;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.full{
+    display: flex;
+    justify-content: center;
+}
+
+#gridSizeContent{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    margin-left: auto;
+}
+
+#colorPickerBoxContent{
+    width: 200px;
+    margin-right: auto;
+}
+#sizePicker{
+    display: flex;
+    flex-direction: column;
+}
 
 h1 {
     font-family: 'Pacifico', cursive;
     font-size: 70px;
-    margin: 0.2em;
+    margin: 0;
     color: #fcfded;
     text-shadow: 3px 3px #93b2ad;
 }
@@ -44,5 +69,40 @@ td {
 }
 
 input[type=number] {
-    width: 6em;
+    width: 2em;
+    background: rgba(0,0,0,0);
+    border: none;
+    color: #4a6162;
+    font-size: 22px;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+}
+
+
+input[type=submit]{
+    padding: 0 40px;
+    margin: 15px;
+    height: auto;
+    background: #7fb7be;
+    border-radius: 15px;
+    box-shadow: 0 3px #4a6162;
+    border: none;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    color: #4a6162;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type=submit]:active{
+  box-shadow: none;
+  top: 3px;
+}
+
+input[type=color]{
+  width: 62px;
+  height: 62px;
+  border-radius: 5px;
 }
