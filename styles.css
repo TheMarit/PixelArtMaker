@@ -1,15 +1,19 @@
 body {
     text-align: center;
     background-image: url("background.svg");
-    background-color: #5AAACC;
+    background-color: #bcdcda;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Caveat', cursive;
+    color: #4a6162;
 }
 
 h1 {
-    font-family: Monoton;
+    font-family: 'Pacifico', cursive;
     font-size: 70px;
     margin: 0.2em;
+    color: #fcfded;
+    text-shadow: 3px 3px #93b2ad;
 }
 
 h2 {
