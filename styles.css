@@ -58,6 +58,7 @@ td {
 table {
     border-collapse: collapse;
     margin: 0 auto;
+    background: rgba(252,253,247,0.7);
 }
 
 tr {
