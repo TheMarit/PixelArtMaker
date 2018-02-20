@@ -7,6 +7,7 @@ body {
     font-family: 'Caveat', cursive;
     color: #4a6162;
 }
+
 .container{
     display: flex;
     flex-direction: column;
@@ -15,6 +16,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 
 #gridSizeContent{
     display: flex;
@@ -80,9 +82,9 @@ input[type=number] {
 }
 
 
-input[type=submit]{
+input[type=submit], button{
     padding: 0 40px;
-    margin: 15px;
+    margin: 10px;
     height: auto;
     background: #7fb7be;
     border-radius: 15px;
@@ -97,7 +99,7 @@ input[type=submit]{
     position: relative;
 }
 
-input[type=submit]:active{
+input[type=submit]:active, button:active{
   box-shadow: none;
   top: 3px;
 }
@@ -106,4 +108,9 @@ input[type=color]{
   width: 62px;
   height: 62px;
   border-radius: 5px;
+  padding: 3px;
+}
+
+.buttons{
+    margin-top: 48px;
 }

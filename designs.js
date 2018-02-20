@@ -1,4 +1,5 @@
 var color = "#4a6162";
+var brush = true;
 
 // listening to colorPicker change and setting its value to variable color
 $("#colorPicker").on("change", function(event){
@@ -13,8 +14,28 @@ $("#sizePicker").submit(function(event){
 
 // Color background on click td
 $("#pixel_canvas").on("click", "td", function(){
-	$(this).css("background", color);
+	if(brush){
+		$(this).css("background", color);
+	} else{
+		$(this).removeAttr("style");
+	}
 });
+
+$(document).on("click", "#clear", function(){
+	$("#pixel_canvas").html(makeGrid($("#input_height").val(),$("#input_width").val()));
+});
+$(document).on("click", "#fill", function(){
+	$("#pixel_canvas").find("td").css('background-color', color);
+});
+
+$(document).on("click", "#eraser", function(){
+	brush = false;
+});
+
+$(document).on("click", "#brush", function(){
+	brush = true;
+});
+
 
 function makeGrid(rows, colums) {
 	var rowBeginning = "<tr>";
